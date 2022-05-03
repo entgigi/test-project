@@ -1,10 +1,11 @@
 descriptorVersion: v4
-image: gigiozzz/test-project:0.0.1-SNAPSHOT
+image: gigiozzz/test-project:0.0.2-SNAPSHOT
 dbms: postgresql
 healthCheckPath: "/management/health"
 roles:
   - "testProject-admin"
   - "conference-admin"
+  - "session-admin"
 # entando-needle-descriptor-add-roles - Entando blueprint will add roles here
 #
 ### uncomment lines below to enable the injection of environment variables in your plugin
