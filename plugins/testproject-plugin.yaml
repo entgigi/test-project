@@ -19,3 +19,11 @@ roles:
 #      secretKeyRef:
 #        name: env-2-secret
 #        key: env-2-secret-key
+environmentVariables:
+  - name: SIMPLE_VAR
+    value: mySimpleValue
+  - name: SECRET_VAR
+    valueFrom:
+      secretKeyRef:
+        name: 1916c235-my-secret
+        key: mySecretKey
